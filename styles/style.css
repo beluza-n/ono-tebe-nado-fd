@@ -1,3 +1,19 @@
+/* ОБЩИЕ КЛАССЫ */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* КЛАССЫ ДЛЯ HEADER */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -38,19 +54,88 @@
   list-style-type: none;
 }
 
-
 .address {
   display: flex;
+  /* gap: 5px; */
   flex-direction: column;
-  gap: 5px;
   max-width: 237px;
 }
 
-.address__link {
-  display: block;
+.address p {
+  line-height: 1.5;
 }
 
 .header__address {
   justify-self: end;
   margin-right: 50px;
+}
+
+/* КЛАССЫ ДЛЯ ЗАГОЛОВКА "ОНО ТЕБЕ НАДО" */
+.cover {
+  position: relative;
+  background: url("../images/cover.jpg");
+  background-size: cover;
+  /* min-height: 757px; */
+  height: 757px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  font-size: 100px;
+  letter-spacing: 30px;
+  line-height: 133px; 
+  padding-top: 160px;
+  /* padding-right: 20px;
+  padding-left: 50px; */
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.aligned-text_last-digit {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.cover__description-text {
+  word-spacing: 18px;
+  font-size: 22px;
+}
+
+.bet-button {
+  font-size: 22px;
+  background: transparent;
+  border-radius: 0;
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  box-shadow: none;
 }
