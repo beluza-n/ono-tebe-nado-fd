@@ -81,14 +81,13 @@ h2 {
   position: relative;
   background: url("../images/cover.jpg");
   background-size: cover;
-  /* min-height: 757px; */
   height: 757px;
   background-position: center;
   display: flex;
   flex-direction: column;
   padding-right: 50px;
   padding-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 180px;
 }
 
 .cover__title {
@@ -98,8 +97,6 @@ h2 {
   letter-spacing: 30px;
   line-height: 133px; 
   padding-top: 160px;
-  /* padding-right: 20px;
-  padding-left: 50px; */
 }
 
 .aligned-text {
@@ -147,12 +144,8 @@ h2 {
 }
 
 /* СТИЛИ ДЛЯ ЛОТОВ */
-
 .lots {
-  margin-top: 180px;
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 120px;
+  margin: 120px 24px;
 }
 
 .lots__heading {
@@ -233,18 +226,11 @@ h2 {
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-  "about__logo about__title"
-  ". about__text";
+  grid-template-rows: 1fr;
+  grid-template-areas: "about__logo about__content";
   background-color: aqua;
-  /* margin-top: 35px; */
-  margin-right: 24px;
-  margin-left: 24px;
-  margin-bottom: 120px;
-  /* padding-left: 47px;
-  padding-top: 35px; */
-  /* padding: 35px 47px; */
+  margin: 120px 24px;
+
 }
 
 .about__logo {
@@ -265,18 +251,19 @@ h2 {
   height: 144px;
 }
 
-.about__title {
-  grid-area: about__title;
-  align-self: center;
+.about__content {
+  grid-area: about__content;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 133px;
   margin-left: 25px;
-  margin-top: 20px;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
-  grid-area: about__text;
+  gap: 1.3em;
   font-size: 20px;
 }
 
