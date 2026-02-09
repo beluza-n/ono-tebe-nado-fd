@@ -1,4 +1,10 @@
 /* ОБЩИЕ КЛАССЫ */
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -150,16 +156,12 @@
 }
 
 .lots__heading {
-  font-size: 40px;
-  font-weight: bold;
   margin-left: 40px;
 }
 
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
-  /* flex-grow: 1; */
-  /* flex: 1 1 334px; */
   gap: 25px;
   justify-content: center;
   list-style: none;
@@ -226,4 +228,55 @@
   text-underline-offset: 5px;
 }
 
+/* СТИЛИ ДЛЯ СЕКЦИИ ОБ АУКЦИОНЕ */
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "about__logo about__title"
+  ". about__text";
+  background-color: aqua;
+  /* margin-top: 35px; */
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 120px;
+  /* padding-left: 47px;
+  padding-top: 35px; */
+  /* padding: 35px 47px; */
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+  grid-area: about__logo;
+  margin-left: 47px;
+  margin-top: 35px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 144px;
+}
+
+.about__title {
+  grid-area: about__title;
+  align-self: center;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  grid-area: about__text;
+  font-size: 20px;
+}
 
