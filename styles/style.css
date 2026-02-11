@@ -16,7 +16,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* КЛАССЫ ДЛЯ HEADER */
@@ -42,7 +42,7 @@
 .header__logo-image {
   width: 148px;
   height: 105px;
-  }
+}
 
 .header__links-list {
   display: flex;
@@ -85,7 +85,7 @@
   z-index: 1;
   font-size: 100px;
   letter-spacing: 30px;
-  line-height: 135px; 
+  line-height: 135px;
   padding-top: 155px;
 }
 
@@ -195,13 +195,13 @@
   background-position: center;
 }
 
-.card_type_book{
+.card_type_book {
   background: url("../images/card-lot-02.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.card_type_picture{
+.card_type_picture {
   background: url("../images/card-lot-03.jpg");
   background-size: cover;
   background-position: center;
@@ -221,7 +221,6 @@
   grid-template-areas: "about__logo about__content";
   /* background-color: aqua; */
   margin: 120px 24px;
-
 }
 
 .about__title {
@@ -273,8 +272,6 @@
   /* background-color: aquamarine; */
   margin-top: 180px;
 }
-
-
 
 .footer__address {
   max-width: 260px;
